@@ -1,0 +1,39 @@
+<?php include 'display_user_info.php'; ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <h1>Fitness/Strength Tracker</h1>
+    <h2>Dashboard Page</h2>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="dashboard.html" class="active">My Dashboard</a></li>
+            <li><a href="exercises.html">Input</a></li>
+            <li><a href="plans.html">Workout Plans</a></li>
+            <li><a href="progress.html">Progress Tracker</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <h2>Welcome, <span id="userName"><?php echo $user['Name']; ?></span>!</h2>
+    <div>Email: <span id="userEmail"><?php echo $user['Email']; ?></span></div>
+    <div>Age: <span id="userAge"><?php echo $user['Age']; ?></span> years</div>
+    <div>Gender: <span id="userGender"><?php echo $user['Gender']; ?></span></div>
+    <h3>Recent Workouts</h3>
+    <ul id="recentWorkouts">
+        <!-- You can dynamically populate recent workouts using PHP as well -->
+    </ul>
+</main>
+<footer>
+    <p> Swipe right for next page or left for previous</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

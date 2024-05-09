@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercises</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <h1>Fitness/Strength Tracker</h1>
+    <h2>Input Workouts Page</h2>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="dashboard.html">My Dashboard</a></li>
+            <li><a href="exercises.html">Input</a></li>
+            <li><a href="plans.html">Workout Plans</a></li>
+            <li><a href="progress.html">Progress Tracker</a></li>
+        </ul>
+    </nav>
+</header>
+<main><form action="/action_page.php">
+    <fieldset>
+        <legend>Input your recent workout:</legend>
+        <label for="workoutDate">Workout Date:</label><br>
+        <input type="date" id="workoutDate" name="workoutDate"><br><br>
+        <label for="exercise">Select Exercise:</label><br>
+        <select id="exercise" name="exercise">
+          <option value="Push-Ups">Push-Ups</option>
+          <option value="Pull-Ups">Pull-Ups</option>
+          <option value="Squats">Squats</option>
+          <option value="Bench Press">Bench Press</option>
+          <option value="Box Jumps">Box Jumps</option>
+          <option value="Running">Running</option>
+        </select><br>
+        <label for="reps">Number of Reps/Minutes:</label><br>
+        <input type="number" id="reps" name="reps" min="1" value="1"><br><br>
+        <input type="submit" value="Submit">
+      </fieldset>
+  </form>
+</main>
+<footer>
+    <p>Swipe right for next page or left for previous</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
